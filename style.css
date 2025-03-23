@@ -1,0 +1,241 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Common Style for All Pages */
+h1, h2 {
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color:red;
+    text-decoration: underline;
+}
+button {
+    padding: 10px 20px;
+    width: 200px;
+    max-width: 40%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    background-color:blue;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Page Specific Styles */
+
+/* 1. Index Page (index.html) */
+body.index {
+    background-image: url('Screenshot_20250319_221349_Chrome.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1.index {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+/* 2. Chat Page (chat.html) */
+body.chat {
+    background-image: url('Screenshot_20250320_222718_Chrome.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.chat-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+/* 3. Login Page (con.html) */
+body.con {
+  /*  background-image: url('9f06fcdd-4dc8-4029-89da-0fc3a0a5930a.jpeg');*/
+  background-color: #f44336;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+h2.con {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* 4. Registration Page (insecri.html) */
+body.insecri {
+    background-image: url('a5dea82b3244e3d0125df25f38c03f68.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h2.insecri {
+    color: #ff9800;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 5. Password Recovery (passoblier.html) */
+body.passoblier {
+    background-image: url('images/passoblier-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2.passoblier {
+    color: #f44336;
+}
+
+/* 6. Profile Page (profil.html) */
+body.profil {
+    background-image: url('97bbc3ecd90c4e146d4730cd64e8efa5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-container {
+    background: rgba(0, 0, 0, 0.7);
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+.profile-container h3 {
+    font-size: 2rem;
+}
+
+/* 7. Contact Page (contacte.html) */
+body.contacte {
+    background-image: url('images/contacte-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-container {
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-container form {
+    margin-bottom: 20px;
+}
+
+.contact-container button {
+    background-color: #4caf50;
+}
+
+.contact-container h2 {
+    font-size: 2.2rem;
+}
+
+/* 8. Search Page (search.html) */
+body.search {
+    background-image: url('images/search-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h2.search {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: white;
+}
+
+.search-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    color: white;
+}
+
+/* Transitions */
+button,
+a,
+h1,
+h2 {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+/* Keyframes for smooth animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    background-image: url('Screenshot_20250318_022933_Chrome.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    color: burlywood;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.7);
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.3);
+}
+    </style>
+</head>
+<body>
+    <form name="registerForm">
+        <h2>Inscription</h2>
+        <input type="text" id="username" placeholder="Nom d'utilisateur" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="password" id="password" placeholder="Mot de passe" required><br><br>
+        <input type="text" id="skills" placeholder="Compétences (séparées par des virgules)" required><br>
+        <button type="submit">S'inscrire</button>
+    </form>
+    <a href="conx.html">Déjà inscrit ?</a> <br>
+    <a href="index.html">Retour à la page d'accueil</a>  
+    <script src="script.js"></script> 
+</form>
+</body>
+</html>

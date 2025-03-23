@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+       /* 6. Profile Page (profil.html) */
+body {
+    background-image: url('97bbc3ecd90c4e146d4730cd64e8efa5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+.container h3 {
+    font-size: 2rem;
+}
+.pro{
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+h1,h2{
+    color: maroon;
+}
+form {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+    </style>
+</head>
+<body id="profilePage">
+    <form action="">
+        <div class="pro">
+   <p><h1>Profil de l'utilisateur</h1><br><br></p>
+    <h2>Ce sont vos information de votre profile</h2>
+    <p><strong>Nom d'utilisateur :</strong> <span id="profileUsername"></span></p>
+    <p><strong>Email :</strong> <span id="profileEmail"></span></p>
+    <p><strong>Compétences :</strong> <span id="profileSkills"></span></p>
+    <button id="logoutButton">Se déconnecter</button><br><br>
+    <p><a href="search.html"><input type="button" value="cliquez ici pour recherchée des compétences"></a></p>
+    <a href="index.html">Retour à la page d'accueil</a>
+        </div>
+</form>
+</body>
+</html>
